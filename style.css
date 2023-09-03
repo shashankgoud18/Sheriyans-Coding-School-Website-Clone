@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#page1{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+#nav{
+    height: 60px;
+    width: 100%;
+    /* background-color: crimson; */
+    border-bottom: 2px solid #dadada;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7vw;
+}
+#nav h2{
+    font-size: 3vw;
+    font-weight: 600;
+}
+.nav-part2{
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+}
+.nav-part2 h4{
+    font-size: 2vw;
+}
+.nav-part2 i{
+    font-size:2vw ;
+    font-weight: 800;
+    display: none;
+}
+.nav-part2 button{
+    font-size: 1.5vw;
+    font-weight: 600;
+    padding: 1vw 2vw;
+    color: #fff;
+    background-color: lightseagreen;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.content{
+    height: calc(100% - 60px);
+    width: 100%;
+    /* background-color: sandybrown; */
+    display: flex;
+    position: relative;
+}
+.left{
+    height: 100%;
+    width: 55%;
+    /* background-color: crimson; */
+    padding: 5vw 7vw;
+}
+.left h1{
+    font-size: 4vw;
+    line-height: 4.4vw;
+}
+.left h1 span{
+    color: lightseagreen;
+}
+.left p{
+    color: #666;
+    width: 80%;
+    margin-top: 2vw ;
+    margin-bottom: 3.5vw ;
+}
+.content button{
+    font-size: 1.5vw;
+    font-weight: 600;
+    padding: 1vw 2vw;
+    color: #fff;
+    background-color: lightseagreen;
+    border: none;
+    border-radius: 5px;
+
+}
+.right{
+    height: 100%;
+    width: 45%;
+    /* background-color: royalblue; */
+}
+.right img{
+   
+    width: 100%;
+}
+@media (max-width:600px) {
+    #nav{
+        padding: 0 3vw;
+        height: 60px;
+    }
+    #nav h2{
+        font-size: 4vw;
+    }
+    .nav-part2 h4{
+        display: none;
+    }
+    .nav-part2 i{
+        font-size: 4vw;
+  display: block;
+    }
+    .nav-part2 button{
+       display: none;
+    }
+    .content{
+        height: calc(100% - 60px);
+        display: flex;
+        flex-direction: column;
+    }
+    .left{
+        height: 40%;
+        width: 100%;
+    }
+    .left h1{
+        font-size: 9vw;
+        line-height: 7vw;
+    } 
+    .left p{
+        font-size: 3.3vw;
+        padding: 2vw 0vw;
+        padding-bottom: 1vw;
+    }
+    .content button{
+        font-size: 3.5vw;
+    }
+    .right {
+        height: 60%;
+        width: 100%;
+    }
+}
